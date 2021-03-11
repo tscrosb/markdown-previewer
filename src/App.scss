@@ -1,0 +1,47 @@
+.App {
+  background: linear-gradient(to top, #c9d6ff, #e2e2e2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  height: 100vh;
+  h1,
+  h2 {
+    margin: 10px;
+    text-align: center;
+  }
+  .markdown-app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 1px solid white;
+    text-align: initial;
+    padding: 0px 20px;
+    .editor-container {
+      height: 100%;
+      z-index: 9999;
+      border: 1px solid white;
+      #editor {
+        box-sizing: border-box;
+        width: 100%;
+        height: 95.5%;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+      }
+    }
+    .preview-container {
+      z-index: 9999;
+    }
+  }
+
+  #preview {
+    z-index: 9999;
+    color: black;
+    text-align: initial;
+    padding: 20px;
+    background: rgba($color: #fff, $alpha: 0.8);
+    border: 1px solid black;
+    li {
+      margin-left: 1rem;
+    }
+  }
+}
